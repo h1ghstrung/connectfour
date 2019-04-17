@@ -188,7 +188,7 @@ class Game extends React.Component{
 
 ReactDOM.render(
     <div style={{textalign: 'center'}}>
-    	<Game />
+    	<Game style={{margin: 'auto'}}/>
     </div>,
     document.getElementById("root")
 )
