@@ -187,8 +187,8 @@ class Game extends React.Component{
 }
 
 ReactDOM.render(
-    <div style="text-align:center;">
-    	<Game style="margin:auto;" />
+    <div className="tc">
+    	<Game />
     </div>,
     document.getElementById("root")
 )
