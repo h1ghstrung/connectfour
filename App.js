@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function Circle(props){
     var color = "white"
     if(props.cell == 1){
