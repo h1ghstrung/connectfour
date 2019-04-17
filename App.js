@@ -1,5 +1,3 @@
-import "./styles.css";
-
 function Circle(props){
     var color = "white"
     if(props.cell == 1){
@@ -189,7 +187,7 @@ class Game extends React.Component{
 }
 
 ReactDOM.render(
-    <div className="tc">
+    <div className="">
     	<Game />
     </div>,
     document.getElementById("root")
