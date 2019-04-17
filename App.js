@@ -142,7 +142,6 @@ class Game extends React.Component{
         return this.checkVertical(row,col)   || this.checkHorizontal(row,col) ||   this.checkDiagonal(row,col)
 
     }
-
 	findAvailableRow(col){
 		    for(var i = 0; i < 6; i++){
 		      if(this.state.cells[i][col] == 0){
@@ -188,8 +187,8 @@ class Game extends React.Component{
 }
 
 ReactDOM.render(
-    <div>
-    	<Game />
+    <div style="text-align:center;">
+    	<Game style="margin:auto;" />
     </div>,
     document.getElementById("root")
 )
