@@ -187,7 +187,7 @@ class Game extends React.Component{
 }
 
 ReactDOM.render(
-    <div style={{margin: '0 auto', width: '100%'}}>
+    <div style={{width: '100%', margin: '0 auto'}}>
         <p>test</p>
     	<Game />
     </div>,
