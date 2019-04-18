@@ -188,7 +188,6 @@ class Game extends React.Component{
 
 ReactDOM.render(
     <div style={{width: '100%'}}>
-        <p>test</p>
     	<Game />
     </div>,
     document.getElementById("root")
