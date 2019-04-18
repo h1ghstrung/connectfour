@@ -177,10 +177,10 @@ class Game extends React.Component{
     }
     render(){
         return (
-            <div style={{textalign: 'center', margin: 'auto'}}>
+            <div style={{textalign: 'center'}}>
                	<h1>{this.state.winner > 0 ?  this.state.winner == 1? "Black Wins":"Red Wins": this.state.player? "Black's Turn" : "Red's Turn"} </h1>
                 <Board cells = {this.state.cells} handleClick = {this.handleClick} />
-                <button onClick = {() => this.restart()}>Restart</button>
+                <button onClick = {() => this.restart()} style={{margin: '2rem',padding: '2rem'}}>Restart</button>
             </div>
         )
     }
