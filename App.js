@@ -177,7 +177,7 @@ class Game extends React.Component{
     }
     render(){
         return (
-            <div style={{margin: '0 auto', width: '100%'}}>
+            <div>
                	<h1>{this.state.winner > 0 ?  this.state.winner == 1? "Black Wins":"Red Wins": this.state.player? "Black's Turn" : "Red's Turn"} </h1>
                 <Board cells = {this.state.cells} handleClick = {this.handleClick} />
                 <button onClick = {() => this.restart()} style={{margin: '2rem',padding: '1rem'}}>Restart</button>
@@ -187,7 +187,8 @@ class Game extends React.Component{
 }
 
 ReactDOM.render(
-    <div>
+    <div style={{margin: '0 auto', width: '100%'}}>
+        <p>test</p>
     	<Game />
     </div>,
     document.getElementById("root")
